@@ -1,6 +1,8 @@
 comment: "Based on language-vb by Gorea235, extended to include Viz script by James Watton"
 fileTypes: [
   "viz"
+  "vs"
+  "v3script"
 ]
 name: "Viz Script"
 patterns: [
@@ -148,7 +150,7 @@ patterns: [
     name: "string.quoted.double.viz"
     patterns: [
       {
-        match: "\"\""
+        match: "\\\\['\"\\\\nrtbfv0`]"
         name: "constant.character.escape.apostrophe.vizasp"
       }
     ]
